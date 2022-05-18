@@ -1,0 +1,209 @@
+{
+  "math": [
+    {
+      "id": 1,
+      "name": "Denklemler",
+      "submenus": [
+        {
+          "id": 2,
+          "name": "2.Derece Denklemler"
+        },
+        {
+          "id": 3,
+          "name": "3.Derece Denklemler"
+        },
+        {
+          "id": 4,
+          "name": "Doğrusal Denklemler"
+        },
+        {
+          "id": 5,
+          "name": "n. Derece Denklemler"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Fonksiyonlar I",
+      "submenus": [
+        {
+          "id": 7,
+          "name": "Fonksiyon Türleri"
+        },
+        {
+          "id": 8,
+          "name": "Bileşke ve Ters Fonksiyon"
+        },
+        {
+          "id": 9,
+          "name": "Fonksiyonlarda Dört İşlem"
+        },
+        {
+          "id": 10,
+          "name": "Fonksiyon Grafikleri"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Fonksiyonlar II",
+      "submenus": [
+        {
+          "id": 12,
+          "name": "Trigonometri Fonksiyonları"
+        },
+        {
+          "id": 13,
+          "name": "Ters Trigonometri Fonksiyonları"
+        },
+        {
+          "id": 14,
+          "name": "Üstel Fonksiyonlar"
+        },
+        {
+          "id": 15,
+          "name": "Logaritma Fonksiyonları"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Analitik Geometri",
+      "submenus": [
+        {
+          "id": 17,
+          "name": "Parabol"
+        },
+        {
+          "id": 18,
+          "name": "Hiperbol"
+        },
+        {
+          "id": 19,
+          "name": "Noktanın Analitiği"
+        },
+        {
+          "id": 20,
+          "name": "Doğrunun Analitiği"
+        },
+        {
+          "id": 21,
+          "name": "Çemberin Analitiği"
+        },
+        {
+          "id": 22,
+          "name": "Üç Boyutlu Analitik"
+        }
+      ]
+    },
+
+    {
+      "id": 30,
+      "name": "Sayılar ve Cebir",
+      "submenus": [
+        {
+          "id": 31,
+          "name": "Polinomlar"
+        },
+        {
+          "id": 32,
+          "name": "Karmaşık Sayılar"
+        },
+        {
+          "id": 33,
+          "name": "Üslü Sayılar"
+        },
+        {
+          "id": 34,
+          "name": "Köklü Sayılar"
+        },
+        {
+          "id": 35,
+          "name": "Özdeşlikler ve Çarpanlara Ayırma"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Analiz",
+      "submenus": [
+        {
+          "id": 37,
+          "name": "Limit ve Süreklilik"
+        },
+        {
+          "id": 38,
+          "name": "Diziler"
+        },
+        {
+          "id": 39,
+          "name": "Türev"
+        },
+        {
+          "id": 40,
+          "name": "Türevin Uygulamaları"
+        },
+        {
+          "id": 41,
+          "name": "İntegral"
+        }
+      ]
+    }
+  ],
+  "geometry": [
+    {
+      "id": 24,
+      "name": "Açılar"
+    },
+    {
+      "id": 25,
+      "name": "Üçgenler"
+    },
+    {
+      "id": 26,
+      "name": "Çokgenler"
+    },
+    {
+      "id": 27,
+      "name": "Uzay Geometri"
+    },
+    {
+      "id": 28,
+      "name": "Dörtgenler"
+    },
+    {
+      "id": 29,
+      "name": "Çemberler ve Daireler"
+    },
+    {
+      "id": 42,
+      "name": "Öklit Karşıtı Geometri"
+    }
+  ],
+  "physics": [
+    {
+      "id": 43,
+      "name": "Newton Fiziği"
+    },
+    {
+      "id": 44,
+      "name": "Kuantum Fiziği"
+    },
+    {
+      "id": 45,
+      "name": "Basınç ve Kaldırma Kuvveti"
+    },
+    {
+      "id": 46,
+      "name": "Optik"
+    },
+    {
+      "id": 47,
+      "name": "Elektromanyetizma"
+    },
+    {
+      "id": 48,
+      "name": "Kuantum Biyolojisi"
+    }
+  ]
+}

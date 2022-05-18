@@ -1,12 +1,13 @@
 
-.column {
-	padding-top: 0 !important;
-	padding-bottom: 0 !important;
+.field-label-{
+	margin-top: 3px;
 }
+
 .row-one {
 	padding-top: 13px;
 }
 form .field {
 	margin: auto;
+	
 	max-width: 740px;
 }

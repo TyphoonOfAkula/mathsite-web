@@ -22,80 +22,90 @@
       <a class="navbar-item" href="/forum"> Forum </a>
 
       <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link" href="/contents"> Konular </a>
-
+        <a class="navbar-link"> Matematik </a>
         <div class="navbar-dropdown">
-          <div class="nested navbar-item dropdown">
+          <div *ngFor="let category of mathCategories" class="nested navbar-item dropdown">
             <div class="dropdown-trigger">
-              <button
-                class="button"
+              <a
+                class="dropdown-item"
                 aria-haspopup="true"
                 aria-controls="dropdown-menu"
+                href="#"
               >
-                <span>Dropdown button</span>
-                <span class="icon is-small">
-                  <i class="fas fa-angle-down" aria-hidden="true"></i>
-                </span>
-              </button>
+                <span>{{category.name}}</span>
+                
+              </a>
             </div>
             <div class="dropdown-menu" id="dropdown-menu" role="menu">
-              <div class="dropdown-content">
-                <a href="#" class="dropdown-item"> Dropdown item </a>
-                <a class="dropdown-item"> Other dropdown item </a>
-                <a href="#" class="dropdown-item is-active">
-                  Active dropdown item
-                </a>
-                <a href="#" class="dropdown-item"> Other dropdown item </a>
-                <hr class="dropdown-divider" />
-                <div class="nested dropdown dropdown-item">
-                  <div class="dropdown-trigger">
-                    <button
-                      class="button"
-                      aria-haspopup="true"
-                      aria-controls="dropdown-menu"
-                    >
-                      <span>Dropdown button</span>
-                      <span class="icon is-small">
-                        <i class="fas fa-angle-down" aria-hidden="true"></i>
-                      </span>
-                    </button>
-                  </div>
-                  <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                    <div class="dropdown-content">
-                      <a href="#" class="dropdown-item"> Dropdown item </a>
-                      <a class="dropdown-item"> Other dropdown item </a>
-                      <a href="#" class="dropdown-item is-active">
-                        Active dropdown item
-                      </a>
-                      <a href="#" class="dropdown-item">
-                        Other dropdown item
-                      </a>
-                      <hr class="dropdown-divider" />
-                      <a href="#" class="dropdown-item"> With a divider </a>
-                    </div>
-                  </div>
-                </div>
+              <div *ngFor="let submenu of category.submenus" class="dropdown-content">
+                <a href="#" class="dropdown-item">{{submenu.name}}</a>               
               </div>
             </div>
           </div>
-          <a class="navbar-item"> </a>
-          <a class="navbar-item"> Contact </a>
-          <hr class="navbar-divider" />
-          <a class="navbar-item"> Report an issue </a>
+          
         </div>
       </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link"> Geometri </a>
+        <div class="navbar-dropdown">
+          <div *ngFor="let category of geoCategories" class="nested navbar-item dropdown">
+            <div class="dropdown-trigger">
+              <a
+                class="dropdown-item"
+                aria-haspopup="true"
+                aria-controls="dropdown-menu"
+                href="#"
+              >
+                <span>{{category.name}}</span>
+                
+              </a>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+              <div *ngFor="let submenu of category.submenus" class="dropdown-content">
+                <a href="#" class="dropdown-item">{{submenu.name}}</a>               
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link"> Fizik </a>
+        <div class="navbar-dropdown">
+          <div *ngFor="let category of physicsCategories" class="nested navbar-item dropdown">
+            <div class="dropdown-trigger">
+              <a
+                class="dropdown-item"
+                aria-haspopup="true"
+                aria-controls="dropdown-menu"
+                href="#"
+              >
+                <span>{{category.name}}</span>
+                
+              </a>
+            </div>
+           <!-- <div class="dropdown-menu" id="dropdown-menu" role="menu">
+              <div *ngFor="let submenu of category.submenus" class="dropdown-content">
+                <a href="#" class="dropdown-item">{{submenu.name}}</a>               
+              </div>
+            </div>-->
+          </div>
+          
+        </div>
+      </div>
+
       <a class="navbar-item" href="/about"> Hakkında </a>
       <a class="navbar-item" href="/contact"> İletişim </a>
     </div>
+  </div>
 
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary" href="/register">
-            <strong>Kayıt Ol</strong>
-          </a>
-          <a class="button is-light" href="/login"> Giriş Yap </a>
-        </div>
+  <div class="navbar-end">
+    <div class="navbar-item">
+      <div class="buttons">
+        <a class="button is-primary" href="/register">
+          <strong>Kayıt Ol</strong>
+        </a>
+        <a class="button is-light" href="/login"> Giriş Yap </a>
       </div>
     </div>
   </div>

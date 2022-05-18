@@ -6,7 +6,7 @@
     margin-left: 100%;
 }
 .nested.dropdown .dropdown-trigger button::after {
-    content: '⦠';
+    content: '';
 }
 .nested.dropdown .dropdown-trigger button {
     padding: 0px 0px;
