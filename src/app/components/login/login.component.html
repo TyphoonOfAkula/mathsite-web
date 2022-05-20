@@ -18,7 +18,9 @@
                   type="text"
                   placeholder="123@gmail.com - Username"
                   class="input"
+                  [(ngModel)]="userForLogin.usernameOrEmail"
                   required
+                  [ngModelOptions]="{standalone: true}"
                 />
                 <span class="icon is-small is-left">
                   <ng-icon name="hero-mail"></ng-icon
@@ -33,7 +35,9 @@
                   type="password"
                   placeholder="********"
                   class="input"
+                  [(ngModel)]="userForLogin.password"
                   required
+                  [ngModelOptions]="{standalone: true}"
                 />
                 <span class="icon is-small is-left">
                   <ng-icon name="hero-lock-closed"></ng-icon>
@@ -42,7 +46,7 @@
             </div>
           
             <div class="field">
-              <button class="button is-primary">Giriş Yap</button>
+              <button class="button is-primary" (click)="login(userForLogin)">Giriş Yap</button>
             </div>
           </form>
         </div>

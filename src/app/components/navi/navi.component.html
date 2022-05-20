@@ -99,7 +99,7 @@
     </div>
   </div>
 
-  <div class="navbar-end">
+  <div *ngIf="!isLogged; else isUserLoggedIn"  class="navbar-end">
     <div class="navbar-item">
       <div class="buttons">
         <a class="button is-primary" href="/register">
@@ -109,4 +109,13 @@
       </div>
     </div>
   </div>
+  <ng-template #isUserLoggedIn>
+    <div class="navbar-item">
+      <div class="buttons">
+        <button class="button is-info is-small" (click)="logout()">
+          Oturumu Kapat
+        </button>
+      </div>
+    </div>
+  </ng-template>
 </nav>

@@ -17,7 +17,9 @@
                     type="text"
                     placeholder="Kullanıcı adı"
                     class="input"
+                    [(ngModel)]="userForRegister.username"
                     required
+                    [ngModelOptions]="{standalone: true}"
                   />
                   <span class="icon is-small is-left">
                     <ng-icon name="hero-user"></ng-icon>
@@ -31,7 +33,9 @@
                     type="text"
                     placeholder="İsim"
                     class="input"
+                    [(ngModel)]="userForRegister.name"
                     required
+                    [ngModelOptions]="{standalone: true}"
                   />
                   <span class="icon is-small is-left">
                     <ng-icon name="hero-bookmark"></ng-icon>
@@ -45,14 +49,16 @@
                     type="email"
                     placeholder="123@gmail.com"
                     class="input"
+                    [(ngModel)]="userForRegister.email"
                     required
+                    [ngModelOptions]="{standalone: true}"
                   />
                   <span class="icon is-small is-left">
                     <ng-icon name="hero-mail"></ng-icon>
                   </span>
                 </div>
               </div>
-              <div class="columns" >
+              <div class="columns">
                 <div class="column">
                   <div class="field">
                     <label for="" class="label field-label-">Parola</label>
@@ -61,7 +67,9 @@
                         type="password"
                         placeholder=" Örnek : ********"
                         class="input"
+                        [(ngModel)]="userForRegister.password"
                         required
+                        [ngModelOptions]="{standalone: true}"
                       />
                       <span class="icon is-small is-left">
                         <ng-icon name="hero-lock-closed"></ng-icon>
@@ -69,15 +77,19 @@
                     </div>
                   </div>
                 </div>
-                <div class="column ">
+                <div class="column">
                   <div class="field">
-                    <label for="" class="label field-label-">Parolayı Doğrulayınız</label>
+                    <label for="" class="label field-label-"
+                      >Parolayı Doğrulayınız</label
+                    >
                     <div class="control has-icons-left">
                       <input
                         type="password"
                         placeholder=" Örnek : ********"
                         class="input"
+                        [(ngModel)]="passwordConfirm"
                         required
+                        [ngModelOptions]="{standalone: true}"
                       />
                       <span class="icon is-small is-left">
                         <ng-icon name="hero-lock-closed"></ng-icon>
@@ -85,14 +97,18 @@
                     </div>
                   </div>
                 </div>
-                
-              </div><div class="field is-grouped">
-                  <div class="control">
-                    <button class="button is-primary is-medium" type="submit">
-                      Kayıt Ol
-                    </button>
-                  </div>
+              </div>
+              <div class="field is-grouped">
+                <div class="control">
+                  <button
+                    class="button is-primary is-medium"
+                    (click)="register(userForRegister)"
+                    type="submit"
+                  >
+                    Kayıt Ol
+                  </button>
                 </div>
+              </div>
             </form>
           </div>
         </div>

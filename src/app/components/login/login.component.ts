@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UserForLogin } from 'src/app/models/userForLogin';
+import { AuthService } from 'src/app/services/auth.service';
 import { BackgroundService } from 'src/app/services/background.service';
 
 @Component({
@@ -9,7 +11,7 @@ import { BackgroundService } from 'src/app/services/background.service';
 })
 export class LoginComponent implements OnInit {
   
-  constructor(private bgService:BackgroundService) {}
+  constructor(private bgService:BackgroundService,private authService:AuthService) {}
   imagePath=""
   ngOnInit(): void {
     this.bgService.getBackground().subscribe(data=>{
@@ -17,4 +19,14 @@ export class LoginComponent implements OnInit {
     })
     
   }
+
+  userForLogin:UserForLogin={
+    password:"",
+    usernameOrEmail:""
+  }
+
+  login(user:UserForLogin){
+    this.authService.login(user)
+  }
+
 }

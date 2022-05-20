@@ -1,4 +1,4 @@
-export interface RegisterResponse {
+export interface AuthResponse {
   token?: string;
   expiration?: Date;
   success?: boolean;
