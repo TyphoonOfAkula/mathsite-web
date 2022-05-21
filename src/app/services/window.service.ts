@@ -1,18 +1,17 @@
 import { Injectable } from '@angular/core';
-
+import {Location} from '@angular/common';
 @Injectable({
   providedIn: 'root'
 })
 export class WindowService {
 
-  constructor() { }
+  constructor( private location: Location) { }
 
   refresh(){
     window.location.reload();
   }
   goto(path:string){
-    window.location.replace(path)
-    this.refresh()
+    this.location.go(path)
   }
   goOrigin(){
     this.goto("/")

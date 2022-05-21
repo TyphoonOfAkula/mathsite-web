@@ -3,4 +3,5 @@ export interface AuthResponse {
   expiration?: Date;
   success?: boolean;
   message?: string;
+  userName?:string
 }

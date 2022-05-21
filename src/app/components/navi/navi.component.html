@@ -1,6 +1,6 @@
 <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="/">
+    <a class="navbar-item" href="/" >
       <img [src]="imgSrc" width="40" height="64" />
     </a>
 
@@ -111,10 +111,11 @@
   </div>
   <ng-template #isUserLoggedIn>
     <div class="navbar-item">
+      <h4 class="title is-5">{{userName}}</h4>
       <div class="buttons">
-        <button class="button is-info is-small" (click)="logout()">
+        <span class="button is-info is-small" (click)="logout()">
           Oturumu Kapat
-        </button>
+        </span>
       </div>
     </div>
   </ng-template>
